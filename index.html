@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MerchantAge Solutions - Online Government Services in Kenya</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header sticky-top">
+        <div class="header-top d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row align-items-center small-text">
+                    <div class="col-md-6">
+                        <i class="fas fa-phone"></i> <strong>WhatsApp & Calls:</strong> 0718 467 511
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <i class="fas fa-clock"></i> <strong>Business Hours:</strong> Monday–Friday, 8:00 AM – 6:00 PM
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <strong style="color: #16A34A;">Merchant</strong><strong style="color: #0B1F4D;">Age</strong>
+                    <small style="display: block; font-size: 0.65rem; color: #666;">SOLUTIONS</small>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="pages/ecitizen.html">eCitizen Services</a></li>
+                                <li><a class="dropdown-item" href="pages/kra.html">KRA Services</a></li>
+                                <li><a class="dropdown-item" href="pages/ntsa.html">NTSA Services</a></li>
+                                <li><a class="dropdown-item" href="pages/helb.html">HELB Services</a></li>
+                                <li><a class="dropdown-item" href="pages/sha.html">SHA Services</a></li>
+                                <li><a class="dropdown-item" href="pages/nssf.html">NSSF Services</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="pages/business.html">Business Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="badge-text">FAST. RELIABLE. SECURE.</span>
+                    <h1 class="hero-title">Your One-Stop Center for All <span class="text-success">Online Services</span> in Kenya</h1>
+                    <p class="hero-subtitle">We help you access and process all government services quickly and hassle-free.</p>
+                    
+                    <!-- Search Bar -->
+                    <div class="search-container mb-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control search-input" id="serviceSearch" placeholder="Search for a service e.g. Driving Licence, KRA PIN, Passport...">
+                            <button class="btn btn-success search-btn" type="button">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </div>
+                        <div id="searchResults" class="search-results"></div>
+                    </div>
+
+                    <!-- Search Examples -->
+                    <div class="search-examples">
+                        <small class="text-muted"><strong>Examples:</strong></small>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="example-tag">Driving Licence</span>
+                            <span class="example-tag">Passport</span>
+                            <span class="example-tag">KRA Returns</span>
+                            <span class="example-tag">Business Registration</span>
+                        </div>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="row trust-badges mt-5">
+                        <div class="col-md-4">
+                            <div class="badge-item">
+                                <i class="fas fa-lock"></i>
+                                <strong>Trusted & Secure</strong>
+                                <small>Your data is safe with us</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="badge-item">
+                                <i class="fas fa-bolt"></i>
+                                <strong>Fast & Reliable</strong>
+                                <small>Quick turnaround time</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="badge-item">
+                                <i class="fas fa-headset"></i>
+                                <strong>WhatsApp Support</strong>
+                                <small>24/7 Assistance</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="col-lg-6 d-none d-lg-block text-center">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=600&fit=crop" alt="Professional working on laptop" class="img-fluid rounded-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="services-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Browse our government and online services.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- eCitizen Services -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                           
+                        </div>
+                        <h5 class="service-title">eCitizen Services</h5>
+                        <p class="service-description">Passports, IDs, Birth Certificates, Good Conduct, Business Registration and more.</p>
+                        <a href="pages/ecitizen.html" class="service-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- KRA Services -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            
+                        </div>
+                        <h5 class="service-title">KRA Services</h5>
+                        <p class="service-description">PIN Registration, Returns Filing, Tax Compliance, TCC, VAT, PAYE and more.</p>
+                        <a href="pages/kra.html" class="service-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- NTSA Services -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                           
+                        </div>
+                        <h5 class="service-title">NTSA Services</h5>
+                        <p class="service-description">Driving Licence, Vehicle Transfer, Logbook Search, PSV Badge, Road Service.</p>
+                        <a href="pages/ntsa.html" class="service-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- HELB Services -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            
+                        </div>
+                        <h5 class="service-title">HELB Services</h5>
+                        <p class="service-description">Loan Application, Loan Appeal, Loan Statement, Repayment, Clearance Certificate.</p>
+                        <a href="pages/helb.html" class="service-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- SHA Services -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            
+                        </div>
+                        <h5 class="service-title">SHA Services</h5>
+                        <p class="service-description">Registration, Contributions, Dependants, Hospital Verification and more.</p>
+                        <a href="pages/sha.html" class="service-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- NSSF Services -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                           
+                        </div>
+                        <h5 class="service-title">NSSF Services</h5>
+                        <p class="service-description">Registration, Contributions, Statement Download, Compliance Certificate.</p>
+                        <a href="pages/nssf.html" class="service-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Business Services -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                           
+                        </div>
+                        <h5 class="service-title">Business Services</h5>
+                        <p class="service-description">Business Registration, Company Registration, CR12, Annual Returns and more.</p>
+                        <a href="pages/business.html" class="service-link">View Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Simple steps to get your services done.</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="steps-line"></div>
+                <div class="row text-center">
+                    <div class="col-md-6 col-lg-2 step-item">
+                        <div class="step-circle">
+                            <i class="fas fa-hand-pointer"></i>
+                        </div>
+                        <h6 class="step-title">Choose Your Service</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-2 step-item">
+                        <div class="step-circle">
+                            <i class="fas fa-list"></i>
+                        </div>
+                        <h6 class="step-title">View Available Services</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-2 step-item">
+                        <div class="step-circle">
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                        <h6 class="step-title">Click Request Service</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-2 step-item">
+                        <div class="step-circle">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h6 class="step-title">Fill Request Form</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-2 step-item">
+                        <div class="step-circle">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h6 class="step-title">We Contact You</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-2 step-item">
+                        <div class="step-circle">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h6 class="step-title">Service Completed</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">About MerchantAge Solutions</h2>
+                    <p class="section-text mb-4">
+                        MerchantAge Solutions is a trusted Kenyan online service provider dedicated to helping individuals and businesses access government digital services with ease. We specialize in eCitizen, KRA, NTSA, HELB, SHA, NSSF, Business Registration, Clearance Certificates, and many other online services. Our mission is to make government services simple, accessible, affordable, and stress-free through professional support and excellent customer service.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <i class="fas fa-check"></i>
+                                <h6>Trusted Service</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <i class="fas fa-check"></i>
+                                <h6>Fast Turnaround</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <i class="fas fa-check"></i>
+                                <h6>Affordable Pricing</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <i class="fas fa-check"></i>
+                                <h6>Confidential Information Handling</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <i class="fas fa-check"></i>
+                                <h6>Nationwide Support</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">Need Assistance?</h2>
+            
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6">
+                    <div class="contact-info-box">
+                        <div class="contact-item mb-4">
+                            <h5 class="contact-label">
+                                <i class="fas fa-phone"></i> WhatsApp & Calls
+                            </h5>
+                            <p class="contact-value"><a href="tel:0718467511">0718 467 511</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <h5 class="contact-label">
+                                <i class="fas fa-clock"></i> Business Hours
+                            </h5>
+                            <p class="contact-value">Monday–Friday<br>8:00 AM – 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://wa.me/254718467511" target="_blank" class="btn btn-success btn-lg btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Request Service Modal -->
+    <div class="modal fade" id="requestServiceModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Request Service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="requestServiceForm">
+                        <input type="hidden" id="selectedService" value="">
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Selected Service</label>
+                            <input type="text" class="form-control" id="selectedServiceDisplay" disabled>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="county" class="form-label">County</label>
+                            <select class="form-select" id="county" required>
+                                <option value="">Select County...</option>
+                                <option value="Nairobi">Nairobi</option>
+                                <option value="Mombasa">Mombasa</option>
+                                <option value="Kisumu">Kisumu</option>
+                                <option value="Nakuru">Nakuru</option>
+                                <option value="Kiambu">Kiambu</option>
+                                <option value="Kajiado">Kajiado</option>
+                                <option value="Other">Other Counties</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="contactMethod" class="form-label">Preferred Contact Method</label>
+                            <select class="form-select" id="contactMethod" required>
+                                <option value="">Select Method...</option>
+                                <option value="WhatsApp">WhatsApp</option>
+                                <option value="Phone Call">Phone Call</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description (Optional)</label>
+                            <textarea class="form-control" id="description" rows="3" placeholder="Any additional information..."></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="documents" class="form-label">Upload Documents (Optional)</label>
+                            <input type="file" class="form-control" id="documents" multiple>
+                            <small class="text-muted">Max 5MB per file</small>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-body p-5">
+                    <div class="success-icon mb-4">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h4 class="mb-3">Thank you!</h4>
+                    <p class="mb-2">Your request has been received successfully.</p>
+                    <p class="text-muted">We will contact you shortly via WhatsApp.</p>
+                </div>
+                <div class="modal-footer justify-content-center border-0">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254718467511" target="_blank" class="floating-whatsapp" id="floatingWhatsApp" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h6 class="footer-title">MerchantAge Solutions</h6>
+                    <p class="footer-text">Your trusted partner for government online services in Kenya.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="footer-title">Contact</h6>
+                    <p class="footer-text">
+                        <i class="fas fa-phone"></i> 0718 467 511<br>
+                        <i class="fas fa-clock"></i> Mon-Fri, 8:00 AM – 6:00 PM
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 MerchantAge Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
